@@ -1,4 +1,4 @@
-inf.nodepack.io
+io.nodepack.inf
 ===============
 
 > Pack a bunch of code packages into an archive for optimized batch provisioning in identical environments.

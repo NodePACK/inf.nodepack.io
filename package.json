@@ -1,4 +1,6 @@
 {
+  "name": "io.nodepack.inf",
+  "version": "0.0.0",
   "devDependencies": {
     "@pinf-it/inf": "^0.1.8",
     "bash.origin": "^0.1.90",
