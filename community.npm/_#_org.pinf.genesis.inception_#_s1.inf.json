@@ -1,0 +1,13 @@
+#!/usr/bin/env inf
+{
+    "#": [
+        "org.pinf.inf/"
+    ],
+
+    "org.pinf.genesis.inception/io.nodepack.inf/community.npm ##": "it.pinf.inf/plugins/node-aspect-utils.",
+    "org.pinf.genesis.inception/io.nodepack.inf/community.npm #": "./",
+
+    "org.pinf.genesis.inception # on.contract": "org.pinf.genesis.inception/io.nodepack.inf/community.npm # contract",
+    "org.pinf.genesis.inception # on.expand": "org.pinf.genesis.inception/io.nodepack.inf/community.npm # expand"
+
+}

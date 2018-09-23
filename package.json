@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@pinf-it/inf": "^0.1.8",
+    "bash.origin": "^0.1.90",
+    "bash.origin.test": "^0.1.39"
+  },
+  "scripts": {
+    "test": "bash.origin.test community.npm/tests"
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "requires": true,
+    "lockfileVersion": 1,
+    "dependencies": {
+        "graceful-fs": {
+            "version": "4.1.11",
+            "resolved": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.1.11.tgz",
+            "integrity": "sha1-Dovf5NHduIVNZOBOp8AOKgJuVlg="
+        },
+        "semver": {
+            "version": "5.5.1",
+            "resolved": "https://registry.npmjs.org/semver/-/semver-5.5.1.tgz",
+            "integrity": "sha512-PqpAxfrEhlSUWge8dwIp4tZnQ25DIOthpiaHNIthsjEFQD6EvqUKUDM7L8O2rShkFccYo1VjJR0coWfNkCubRw==",
+            "dev": true
+        }
+    }
+}
