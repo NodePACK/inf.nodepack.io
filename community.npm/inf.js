@@ -99,6 +99,7 @@ class Packer {
                 }
 
                 await runCommand('npm', [ 'install' ]);
+                await runCommand('npm', [ 'shrinkwrap' ]);
 
                 // TODO: Pack & upload if nodesync is enabled
                 //await runCommand('npm', [ 'pack' ]);
