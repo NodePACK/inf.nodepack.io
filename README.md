@@ -10,7 +10,7 @@ Usage
 ```
 #!/usr/bin/env inf
 {
-    "#": "io.nodepack.inf",
+    "#": "io.nodepack.inf/",
 
     "org.pinf.genesis.inception/io.nodepack.inf/community.npm # .[]pack": {
         "name": "testpack",
