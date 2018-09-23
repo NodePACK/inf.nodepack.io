@@ -7,7 +7,7 @@ rm -Rf .~* || true
 inf {
     "#": "../",
 
-    "org.pinf.genesis.inception/io.nodepack.inf/community.npm # .[]pack +1": {
+    "org.pinf.genesis.inception/io.nodepack.inf/community.npm # .[]pack": {
         "name": "testpack",
         "descriptor": {
             "dependencies": {
