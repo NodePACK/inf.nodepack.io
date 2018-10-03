@@ -1,1 +1,139 @@
+>>>TEST_IGNORE_LINE:in [\d\.]+s$<<<
+>>>TEST_IGNORE_LINE:vulnerabilities$<<<
+>>>TEST_IGNORE_LINE:^\s*$<<<
+VERIFY: ls ./.~cache
+ls: ./.~cache: No such file or directory
+VERIFY DONE
+[io.nodepack.inf/communit.npm] Updating 'TeStLoCaLiZeD/.~cache/io.nodepack.inf/community.npm/testpack/v10_darwin_x64/dependencies' from pack 'testpack'
+npm WARN testpack@0.1.1 No description
+npm WARN testpack@0.1.1 No repository field.
+npm WARN testpack@0.1.1 No license field.
+npm notice created a lockfile as npm-shrinkwrap.json. You should commit this file.
+[io.nodepack.inf/communit.npm] Updating 'TeStLoCaLiZeD/.~cache/io.nodepack.inf/community.npm/testpack/v10_darwin_x64/devDependencies' from pack 'testpack'
+npm WARN testpack@0.1.1 No description
+npm WARN testpack@0.1.1 No repository field.
+npm WARN testpack@0.1.1 No license field.
+npm WARN The package semver is included as both a dev and production dependency.
+npm notice created a lockfile as npm-shrinkwrap.json. You should commit this file.
+[io.nodepack.inf/communit.npm] Updating 'TeStLoCaLiZeD/.~cache/io.nodepack.inf/community.npm/testpack/v0.1_v10_darwin_x64/dependencies' from pack 'testpack'
+npm WARN testpack@0.1.1 No description
+npm WARN testpack@0.1.1 No repository field.
+npm WARN testpack@0.1.1 No license field.
+npm notice created a lockfile as npm-shrinkwrap.json. You should commit this file.
+[io.nodepack.inf/communit.npm] Updating 'TeStLoCaLiZeD/.~cache/io.nodepack.inf/community.npm/testpack/v0.1_v10_darwin_x64/devDependencies' from pack 'testpack'
+npm WARN testpack@0.1.1 No description
+npm WARN testpack@0.1.1 No repository field.
+npm WARN testpack@0.1.1 No license field.
+npm WARN The package semver is included as both a dev and production dependency.
+npm notice created a lockfile as npm-shrinkwrap.json. You should commit this file.
+[io.nodepack.inf/communit.npm] Updating 'TeStLoCaLiZeD/.~cache/io.nodepack.inf/community.npm/testpack/v0_v10_darwin_x64/dependencies' from pack 'testpack'
+npm WARN testpack@0.1.1 No description
+npm WARN testpack@0.1.1 No repository field.
+npm WARN testpack@0.1.1 No license field.
+npm notice created a lockfile as npm-shrinkwrap.json. You should commit this file.
+[io.nodepack.inf/communit.npm] Updating 'TeStLoCaLiZeD/.~cache/io.nodepack.inf/community.npm/testpack/v0_v10_darwin_x64/devDependencies' from pack 'testpack'
+npm WARN testpack@0.1.1 No description
+npm WARN testpack@0.1.1 No repository field.
+npm WARN testpack@0.1.1 No license field.
+npm WARN The package semver is included as both a dev and production dependency.
+npm notice created a lockfile as npm-shrinkwrap.json. You should commit this file.
+VERIFY: ls ./.~cache/io.nodepack.inf/community.npm/testpack
+.
+..
+v0.1_v10_darwin_x64
+v0_v10_darwin_x64
+v10_darwin_x64
+VERIFY DONE
+VERIFY: ls ./.~cache/io.nodepack.inf/community.npm/testpack/*/*
+./.~cache/io.nodepack.inf/community.npm/testpack/v0.1_v10_darwin_x64/dependencies:
+.
+..
+.~package.json.hash
+node_modules
+npm-shrinkwrap.json
+package.json
+./.~cache/io.nodepack.inf/community.npm/testpack/v0.1_v10_darwin_x64/devDependencies:
+.
+..
+.~package.json.hash
+node_modules
+npm-shrinkwrap.json
+package.json
+./.~cache/io.nodepack.inf/community.npm/testpack/v0_v10_darwin_x64/dependencies:
+.
+..
+.~package.json.hash
+node_modules
+npm-shrinkwrap.json
+package.json
+./.~cache/io.nodepack.inf/community.npm/testpack/v0_v10_darwin_x64/devDependencies:
+.
+..
+.~package.json.hash
+node_modules
+npm-shrinkwrap.json
+package.json
+./.~cache/io.nodepack.inf/community.npm/testpack/v10_darwin_x64/dependencies:
+.
+..
+.~package.json.hash
+node_modules
+npm-shrinkwrap.json
+package.json
+./.~cache/io.nodepack.inf/community.npm/testpack/v10_darwin_x64/devDependencies:
+.
+..
+.~package.json.hash
+node_modules
+npm-shrinkwrap.json
+package.json
+VERIFY DONE
+VERIFY: cat ./.~cache/io.nodepack.inf/community.npm/testpack/v0_v10_darwin_x64/devDependencies/package.json
+{
+    "name": "testpack",
+    "version": "0.1.1",
+    "dependencies": {
+        "graceful-fs": "4.1.10"
+    },
+    "bundledDependencies": [
+        "graceful-fs",
+        "semver"
+    ],
+    "devDependencies": {
+        "semver": "^5.5.0"
+    }
+}
+VERIFY DONE
+VERIFY: cat ./.~cache/io.nodepack.inf/community.npm/testpack/v0.1_v10_darwin_x64/devDependencies/package.json
+{
+    "name": "testpack",
+    "version": "0.1.1",
+    "dependencies": {
+        "graceful-fs": "4.1.10"
+    },
+    "bundledDependencies": [
+        "graceful-fs",
+        "semver"
+    ],
+    "devDependencies": {
+        "semver": "^5.5.0"
+    }
+}
+VERIFY DONE
+VERIFY: cat ./.~cache/io.nodepack.inf/community.npm/testpack/v10_darwin_x64/devDependencies/package.json
+{
+    "name": "testpack",
+    "version": "0.1.1",
+    "dependencies": {
+        "graceful-fs": "4.1.10"
+    },
+    "bundledDependencies": [
+        "graceful-fs",
+        "semver"
+    ],
+    "devDependencies": {
+        "semver": "^5.5.0"
+    }
+}
+VERIFY DONE
 OK

@@ -19,8 +19,7 @@ Usage
                 "graceful-fs": "4.1.11"
             }
         },
-        "aspect": "dependencies",
-        "basePath": "./.~testpack~dependencies"
+        "aspect": "dependencies"
     },
 
     "org.pinf.genesis.inception # run()": "expand"

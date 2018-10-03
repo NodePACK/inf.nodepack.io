@@ -1,9 +1,11 @@
 {
-  "requires": true,
+  "name": "io.nodepack.inf",
+  "version": "0.0.0",
   "lockfileVersion": 1,
+  "requires": true,
   "dependencies": {
     "@pinf-it/inf": {
-      "version": "0.1.8",
+      "version": "0.1.9",
       "dev": true,
       "requires": {
         "bluebird": "^3.5.1",
@@ -3015,6 +3017,11 @@
       "resolved": "https://registry.npmjs.org/number-is-nan/-/number-is-nan-1.0.1.tgz",
       "integrity": "sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=",
       "dev": true
+    },
+    "semver": {
+      "version": "5.5.1",
+      "resolved": "https://registry.npmjs.org/semver/-/semver-5.5.1.tgz",
+      "integrity": "sha512-PqpAxfrEhlSUWge8dwIp4tZnQ25DIOthpiaHNIthsjEFQD6EvqUKUDM7L8O2rShkFccYo1VjJR0coWfNkCubRw=="
     },
     "string-width": {
       "version": "1.0.2",

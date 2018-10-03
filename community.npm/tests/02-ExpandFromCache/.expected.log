@@ -1,1 +1,37 @@
+>>>TEST_IGNORE_LINE:in [\d\.]+s$<<<
+>>>TEST_IGNORE_LINE:vulnerabilities$<<<
+>>>TEST_IGNORE_LINE:^\s*$<<<
+VERIFY: ls ../01-Contract/.~cache/io.nodepack.inf/community.npm/testpack
+.
+..
+v0.1_v10_darwin_x64
+v0_v10_darwin_x64
+v10_darwin_x64
+VERIFY DONE
+[io.nodepack.inf/communit.npm] Linking 'TeStLoCaLiZeD/01-Contract/.~cache/io.nodepack.inf/community.npm/testpack/v0.1_v10_darwin_x64/dependencies' to 'TeStLoCaLiZeD/.~testpack~dependencies'
+[io.nodepack.inf/communit.npm] Linking 'TeStLoCaLiZeD/01-Contract/.~cache/io.nodepack.inf/community.npm/testpack/v0.1_v10_darwin_x64/devDependencies' to 'TeStLoCaLiZeD/.~testpack~devDependencies'
+VERIFY: ls ./.~testpack~*
+./.~testpack~dependencies:
+.
+..
+.~package.json.hash
+node_modules
+npm-shrinkwrap.json
+package.json
+./.~testpack~devDependencies:
+.
+..
+.~package.json.hash
+node_modules
+npm-shrinkwrap.json
+package.json
+VERIFY DONE
+VERIFY: ls ./.~io.nodepack.inf~*
+ls: ./.~io.nodepack.inf~*: No such file or directory
+VERIFY DONE
+VERIFY: ls ./node_modules/.bin
+.
+..
+testpack~0.1~devDependencies~semver
+VERIFY DONE
 OK

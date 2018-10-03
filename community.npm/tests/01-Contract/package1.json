@@ -1,0 +1,10 @@
+{
+    "name": "testpack",
+    "version": "0.1.1",
+    "dependencies": {
+        "graceful-fs": "4.1.10"
+    },
+    "devDependencies": {
+        "semver": "^5.5.0"
+    }
+}

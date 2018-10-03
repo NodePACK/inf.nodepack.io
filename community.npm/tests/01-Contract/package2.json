@@ -1,4 +1,6 @@
 {
+    "name": "testpack",
+    "version": "0.1.0",
     "dependencies": {
         "graceful-fs": "4.1.11"
     },

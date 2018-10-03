@@ -1,1 +1,42 @@
+>>>TEST_IGNORE_LINE:in [\d\.]+s$<<<
+>>>TEST_IGNORE_LINE:vulnerabilities$<<<
+>>>TEST_IGNORE_LINE:^\s*$<<<
+[io.nodepack.inf/communit.npm] Updating 'TeStLoCaLiZeD/.~testpack~dependencies' from pack 'testpack'
+npm WARN testpack@0.0.0 No description
+npm WARN testpack@0.0.0 No repository field.
+npm WARN testpack@0.0.0 No license field.
+npm notice created a lockfile as npm-shrinkwrap.json. You should commit this file.
+[io.nodepack.inf/communit.npm] Updating 'TeStLoCaLiZeD/.~testpack~devDependencies' from pack 'testpack'
+npm WARN testpack@0.0.0 No description
+npm WARN testpack@0.0.0 No repository field.
+npm WARN testpack@0.0.0 No license field.
+npm WARN The package semver is included as both a dev and production dependency.
+npm notice created a lockfile as npm-shrinkwrap.json. You should commit this file.
+VERIFY: ls ./.~testpack~*
+./.~testpack~dependencies:
+.
+..
+.~package.json.hash
+node_modules
+npm-shrinkwrap.json
+package.json
+./.~testpack~devDependencies:
+.
+..
+.~package.json.hash
+node_modules
+npm-shrinkwrap.json
+package.json
+VERIFY DONE
+VERIFY: ls ./.~io.nodepack.inf~*
+ls: ./.~io.nodepack.inf~*: No such file or directory
+VERIFY DONE
+VERIFY: ls ./node_modules
+ls: ./node_modules: No such file or directory
+VERIFY DONE
+-----
+>>>TEST_IGNORE_LINE:^\s+at<<<
+>>>TEST_IGNORE_LINE:^\[inf\] filepath: <<<
+[inf] cwd: TeStLoCaLiZeD
+[inf] Error: '.cache' not set!
 OK
