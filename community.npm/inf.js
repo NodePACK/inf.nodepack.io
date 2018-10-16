@@ -234,6 +234,8 @@ class Packer {
 
                         INF.LIB.LODASH.set(installedDescriptor, installedDescriptorPointer, aspectCachePath);
 
+                        /*
+                        //TODO: Only link bin paths if configured to do so
                         const cacheBinPath = INF.LIB.PATH.join(aspectCachePath, 'node_modules', '.bin');
                         const targetBinPath = INF.LIB.PATH.join(basePath, 'node_modules', '.bin');
 
@@ -271,6 +273,7 @@ class Packer {
                                 });
                             }                            
                         }
+                        */
 
                         await INF.LIB.FS.outputFileAsync(installedDescriptorPath, INF.LIB.STABLE_JSON.stringify(installedDescriptor, null, 4), "utf8");
 
