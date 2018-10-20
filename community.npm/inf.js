@@ -117,9 +117,22 @@ class Packer {
     
                     function runCommand (command, args) {
                         return new Promise(function (resolve, reject) {
+
+                            if (INF.LIB.verbose) console.log(`[io.nodepack.inf/communit.npm] Running '${command} ${args.join(' ')}' at '${tmpAspectCachePath}'`);
+
                             const proc = INF.LIB.CHILD_PROCESS.spawn(command, args, {
                                 cwd: tmpAspectCachePath,
-                                stdio: 'inherit'
+                                stdio: 'inherit',
+                                env: ((function () {
+                                    const env = {};
+                                    Object.keys(process.env).forEach(function (name) {
+                                        if (/^npm_/.test(name)) {
+                                            return;
+                                        }
+                                        env[name] = process.env[name];
+                                    });
+                                    return env;
+                                })())
                             });
                             proc.on('close', (code) => {
                                 // TODO: Retry on error?
@@ -170,6 +183,8 @@ class Packer {
 
                     INF.LIB.ASSERT(pack.value.name, "No 'pack.name' property set!");
 
+                    if (INF.LIB.verbose) console.log(`[io.nodepack.inf/communit.npm] Contract pack '${pack.value.name}'`);
+
                     const cachePath = cachePathForPack(toolchain, pack);
 
                     if (pack.value.aspect) {
@@ -188,6 +203,9 @@ class Packer {
 
                     INF.LIB.ASSERT(pack instanceof INF.LIB.INF.Node, "No 'pack' property set!");
                     INF.LIB.ASSERT(pack.value.name, "No 'pack.name' property set!");
+
+                    if (INF.LIB.verbose) console.log(`[io.nodepack.inf/communit.npm] Expand pack '${pack.value.name}'`);
+
                     INF.LIB.ASSERT(pack.value.basePath, "No 'pack.basePath' property set!");
                     INF.LIB.ASSERT(pack.value.aspect, "No 'pack.aspect' property set!");
 
